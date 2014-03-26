@@ -1,25 +1,26 @@
 Summary:	Stopwatch and timer for GNOME 3
 Name:		gnome-clocks
-Version:	3.10.1
+Version:	3.12.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-clocks/3.10/%{name}-%{version}.tar.xz
-# Source0-md5:	f2994d78aff438a51f0d13b0d1ecdaac
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-clocks/3.12/%{name}-%{version}.tar.xz
+# Source0-md5:	7d6354501773c034e49c912169abfd6c
 URL:		https://live.gnome.org/Design/Apps/Documents
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	geocode-glib-devel
+BuildRequires:	geocode-glib-devel >= 3.12.0
 BuildRequires:	gettext-devel
-BuildRequires:	gnome-desktop-devel
+BuildRequires:	gnome-desktop-devel >= 3.12.0
 BuildRequires:	intltool
-BuildRequires:	libgweather-devel
+BuildRequires:	libgweather-devel >= 3.12.0
 BuildRequires:	libtool
 BuildRequires:	pkg-config
+BuildRequires:	vala >= 0.24.0
 Requires(post,postun):	/usr/bin/gtk-update-icon-cache
 Requires(post,postun):	glib-gio-gsettings
 Requires:	hicolor-icon-theme
-Requires:	libgweather-data
+Requires:	libgweather-data >= 3.12.0
 Requires:	geoclue2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -76,6 +77,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/gnome-clocks
 %{_datadir}/glib-2.0/schemas/*.xml
 %{_datadir}/gnome-clocks
-%{_desktopdir}/gnome-clocks.desktop
+%{_desktopdir}/org.gnome.clocks.desktop
 %{_iconsdir}/hicolor/*/*/*.png
 
