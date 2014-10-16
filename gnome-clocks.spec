@@ -1,11 +1,11 @@
 Summary:	Stopwatch and timer for GNOME
 Name:		gnome-clocks
-Version:	3.14.0
+Version:	3.14.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-clocks/3.14/%{name}-%{version}.tar.xz
-# Source0-md5:	91586137e5e662f0863ee4f855f71925
+# Source0-md5:	1952e7889d979f1221669d451a0971cc
 URL:		https://live.gnome.org/Design/Apps/Documents
 BuildRequires:	autoconf
 BuildRequires:	automake
